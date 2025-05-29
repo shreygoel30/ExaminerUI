@@ -17,7 +17,7 @@ public class AdminLogin extends BasePage {
     @FindBy(className = "password")
     private WebElement passwordTextBox;
 
-    @FindBy(xpath = "//button[@class=\"btn button login-button\"]")
+    @FindBy(className = "login-button")
     WebElement loginButton;
 
     @FindBy(xpath = "//a[@class=\"dropdown-toggle nav-link\"]")
@@ -42,11 +42,11 @@ public class AdminLogin extends BasePage {
         moreApps.click();
     }
 
-    public void clickexaminerBtn() {
+    public void clickExaminerBtn() {
         examinerAppButton.click();
     }
 
-    public void clickadminDashboard() {
+    public void clickAdminDashboard() {
         adminDashboard.click();
     }
 
